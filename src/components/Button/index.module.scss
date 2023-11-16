@@ -1,0 +1,44 @@
+@import '../../app/globals.scss';
+.button {
+  height: 3.5rem;
+  width: 100%;
+  border: none;
+  margin: 0 auto;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 5px;
+  background: #5d5fef;
+
+  &:hover {
+    cursor: pointer;
+    background: #7775ff;
+  }
+
+  &:active {
+    background: #2f31e0;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+  }
+}
+
+.disabled {
+  height: 3.5rem;
+  width: 100%;
+  border: none;
+  margin: 0 auto;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 5px;
+  background-color: rgba(93, 95, 239, 0.7);
+  &:hover {
+    cursor: default !important;
+  }
+  .sent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+}

@@ -1,0 +1,79 @@
+@import '../../globals.scss';
+
+.userManagementWrapper {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  margin: 44px auto 0;
+}
+
+.tableWrapper {
+  border-radius: 16px;
+  border: 1px solid #f1f1f1;
+  background: #fff;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+  padding: 25px 25px 35px 20px;
+  box-sizing: border-box;
+
+  .tableCategoryHeading {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .subHeading {
+      color: #222325;
+      font-size: 25px;
+      font-weight: 700;
+      font-style: normal;
+      line-height: normal;
+    }
+
+    & > div:first-child {
+      display: flex;
+      gap: 15px;
+      color: #484848;
+      font-size: 15px;
+      line-height: normal;
+      letter-spacing: 0.3px;
+      & > div {
+        cursor: pointer;
+      }
+    }
+
+    .activeCategory {
+      border-bottom: 2px solid $primary-color;
+      padding-bottom: 3px;
+    }
+
+    .inviteButton {
+      display: flex;
+      width: 99px;
+      padding: 0 5px;
+      height: 30px;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      border-radius: 4px;
+      border: 1px solid var(--main, $primary-color);
+      background: #fff;
+      flex-shrink: 0;
+      color: #222325;
+      font-weight: 500;
+      font-size: 14px;
+      font-style: normal;
+      letter-spacing: 0.14px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #5d5fef;
+        color: #fff;
+      }
+      &:active {
+        background-color: #2f31e0;
+        color: #fff;
+      }
+    }
+  }
+}

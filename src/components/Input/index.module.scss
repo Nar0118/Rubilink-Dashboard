@@ -1,0 +1,95 @@
+@import '../../app/globals.scss';
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  position: relative;
+  margin: 0 0 1vh;
+  color: rgba(64, 64, 64, 0.5);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  .inviteLabel {
+    color: #9297a1;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  label {
+    color: rgba(64, 64, 64, 0.5);
+    font-size: 0.8rem;
+  }
+
+  .inviteInput {
+    border-radius: 4px;
+    border: 1px solid #a5a6f6;
+    color: #222325;
+    padding: 0 11px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  input {
+    height: 3rem;
+    width: 100%;
+    outline: none;
+    border-radius: 0.25rem;
+    padding: 0 1.8rem;
+    border-top: 0.5px solid $primary-color;
+    border-right: 0.5px solid $primary-color;
+    border-bottom: 2px solid $primary-color;
+    border-left: 0.5px solid $primary-color;
+    background: #fff;
+    box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.04);
+    color: #222325;
+    font-size: 1rem;
+    line-height: 26px;
+    box-sizing: border-box;
+  }
+
+  .inputHolder {
+    position: relative;
+    width: 100%;
+
+    .viewIcon {
+      position: absolute;
+      left: 90%;
+      top: 50%;
+      transform: translate(0, -40%);
+      cursor: pointer;
+    }
+
+    .hideEye {
+      position: absolute;
+      cursor: pointer;
+      left: 90%;
+      top: 50%;
+      transform: translate(0, 10%);
+      transform: rotate(45deg);
+      width: 20px;
+      height: 2px;
+      border-radius: 5px;
+      background-color: $primary-color;
+    }
+  }
+}
+
+.errorBorder {
+  border-top: 0.5px solid #e84142 !important;
+  border-right: 0.5px solid #e84142 !important;
+  border-bottom: 2px solid #e84142 !important;
+  border-left: 0.5px solid #e84142 !important;
+}
+
+.errorMessage {
+  color: #e84142;
+  font-size: 0.8rem;
+  line-height: 24px;
+}

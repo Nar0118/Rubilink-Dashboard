@@ -1,0 +1,39 @@
+.createButton {
+  width: max-content;
+  display: flex;
+  padding: 5px 13px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 4px;
+  background: #dae1fa;
+  color: #000;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.16px;
+  cursor: pointer;
+  &:hover {
+    background-color: #acbeff;
+  }
+  &:active {
+    background-color: #5d5fef;
+    color: #ffffff;
+
+    & > img {
+      content: url('/images/plusActive.svg');
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .createButton {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .createButton {
+    font-size: 10px;
+  }
+}

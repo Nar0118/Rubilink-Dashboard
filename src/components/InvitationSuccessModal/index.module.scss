@@ -1,0 +1,23 @@
+@import '../../app/globals.scss';
+.invitationModal {
+  .invitationSuccess {
+    color: #222325;
+    font-size: 20px;
+    line-height: normal;
+    & > span {
+      color: $primary-color;
+    }
+    margin-bottom: 60px;
+  }
+  & > div {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 1vh;
+    box-sizing: border-box;
+  }
+
+  .icon {
+    margin-top: 60px;
+    margin-bottom: 20px;
+  }
+}

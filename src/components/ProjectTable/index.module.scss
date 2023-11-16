@@ -1,0 +1,97 @@
+.projects {
+  width: 100%;
+  .projectsHeaders {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 50px 0 20px;
+    .headerSpace {
+      width: 7%;
+    }
+    p {
+      width: 24%;
+      overflow: hidden;
+      font-weight: 600;
+    }
+  }
+  .projectsData {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    border-radius: 8px;
+    padding: 10px 0;
+    background-color: #ffffff;
+    margin: 10px 0;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #f0f0ff !important;
+      cursor: pointer;
+    }
+
+    &:active {
+      background-color: #e8e8ff !important;
+    }
+
+    .iconContainer {
+      width: 4%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+    .valueContainer {
+      width: 93%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      p {
+        width: 25%;
+        overflow: hidden;
+      }
+    }
+    img {
+      cursor: pointer;
+    }
+  }
+  .PaginationContainer {
+    padding-top: 20px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    color: #a5a3a9;
+
+    .showingNumberText {
+      font-size: 13px;
+      font-weight: 400;
+      position: absolute;
+      left: 20px;
+      top: 30px;
+    }
+
+    .showSizeText {
+      position: absolute;
+      right: 100px;
+      top: 30px;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 16px;
+    }
+  }
+  .perPageStyle {
+    ul li:last-child {
+      position: absolute;
+      right: 1px;
+    }
+  }
+
+  span[aria-label='search'] {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .showSizeText {
+    display: none;
+  }
+}

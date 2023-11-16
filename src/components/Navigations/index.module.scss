@@ -1,0 +1,11 @@
+.dashboardWrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: 91vh;
+  position: relative;
+  .dashboardContainer {
+    height: 100%;
+    width: 100%;
+  }
+}

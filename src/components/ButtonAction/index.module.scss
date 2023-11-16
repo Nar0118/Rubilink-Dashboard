@@ -1,0 +1,24 @@
+.buttonAction {
+  display: flex;
+  width: 85px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  background: #eff0f4;
+  color: #70757b;
+  cursor: pointer;
+}
+.editButton {
+  font-size: 14px;
+  line-height: normal;
+  letter-spacing: 0.14px;
+}
+
+.removeButton {
+  color: #e84142 !important;
+  font-size: 14px;
+  line-height: normal;
+}

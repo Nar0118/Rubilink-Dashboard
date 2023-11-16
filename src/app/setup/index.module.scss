@@ -1,0 +1,171 @@
+@import '../globals.scss';
+
+.title {
+  color: #012a69;
+  text-align: center;
+  font-size: 25px;
+  line-height: normal;
+  margin-bottom: 2vh;
+}
+
+.subtitle {
+  color: #012a69;
+  font-size: 18px;
+  line-height: normal;
+}
+
+.formContainer {
+  margin: 0 0 2rem;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.buttonHolder {
+  width: 80%;
+}
+
+@mixin placeholder {
+  color: rgba(34, 35, 37, 0.6);
+  font-size: 1rem;
+  line-height: 26px;
+}
+
+.bottomSection {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  width: 80%;
+  justify-content: center;
+
+  p {
+    text-align: center;
+    color: #404040;
+    font-size: 0.9rem;
+    line-height: 22px;
+  }
+
+  a {
+    color: #012a69;
+    text-align: right;
+    font-size: 0.9rem;
+    line-height: 22px;
+    text-decoration-line: underline;
+  }
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  width: 73%;
+  margin: 10px 0;
+
+  div {
+    display: flex;
+  }
+
+  a {
+    color: #012a69;
+    text-align: right;
+    font-size: 0.8rem;
+    line-height: 22px;
+    text-decoration: none;
+  }
+
+  label {
+    color: #012a69;
+    font-size: 0.9rem;
+    line-height: 24px;
+    padding-left: 10px;
+  }
+
+  input[type='checkbox'] {
+    width: 20px;
+    height: 20px;
+    border-radius: 0;
+  }
+}
+
+.loader {
+  margin: 30px 0;
+  margin-top: 1rem;
+  border: 16px solid #f3f3f3;
+  border-top: 0.8rem solid #1ca7ec;
+  border-radius: 50%;
+  width: 1rem;
+  height: 1rem;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .card {
+    width: 350px !important;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .card {
+    width: 270px !important;
+    padding: 4rem 0;
+  }
+
+  .formContainer {
+    width: 90%;
+
+    &div {
+      width: 100%;
+    }
+
+    p {
+      font-size: 0.7rem !important;
+    }
+
+    a {
+      font-size: 0.7rem !important;
+    }
+
+    label {
+      font-size: 0.7rem !important;
+    }
+  }
+
+  .logo {
+    padding-top: 10vh;
+    img {
+      width: 100px;
+    }
+  }
+
+  .inputContainer {
+    input {
+      width: 75%;
+    }
+
+    .inputHolder {
+      .viewIcon {
+        width: 15px;
+        left: 85%;
+      }
+
+      .hideEye {
+        left: 85%;
+        width: 17px;
+      }
+    }
+  }
+
+  .row {
+    width: 90%;
+  }
+}

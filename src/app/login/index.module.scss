@@ -1,0 +1,154 @@
+@import '../globals.scss';
+
+.title {
+  text-align: center;
+  color: #012a69;
+  text-align: center;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.formContainer {
+  margin-top: 1rem;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.buttonHolder {
+  width: 80%;
+  margin: 1.5vh 0;
+}
+
+@mixin placeholder {
+  color: rgba(34, 35, 37, 0.6);
+  font-size: 1rem;
+  line-height: 26px;
+}
+
+.bottomSection {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  width: 80%;
+  justify-content: center;
+
+  p {
+    text-align: center;
+    color: #404040;
+    font-size: 0.9rem;
+    line-height: 22px;
+  }
+
+  a {
+    color: #012a69;
+    text-align: right;
+    font-size: 0.9rem;
+    line-height: 22px;
+    text-decoration-line: underline;
+  }
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 10px 0;
+
+  div {
+    display: flex;
+  }
+
+  a {
+    color: #012a69;
+    text-align: right;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    text-decoration: none;
+  }
+
+  label {
+    color: #012a69;
+    text-align: right;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    padding-left: 10px;
+  }
+
+  input[type='checkbox'] {
+    width: 20px;
+    height: 20px;
+    border-radius: 0;
+  }
+}
+.underPart {
+  margin-top: 1vh;
+}
+
+@media only screen and (max-width: 500px) {
+  .card {
+    width: 270px !important;
+    padding: 4rem 0;
+  }
+
+  .formContainer {
+    width: 90%;
+
+    &div {
+      width: 100%;
+    }
+
+    p {
+      font-size: 0.7rem !important;
+    }
+
+    a {
+      font-size: 0.7rem !important;
+    }
+
+    label {
+      font-size: 0.7rem !important;
+    }
+  }
+
+  .logo {
+    padding-top: 10vh;
+    img {
+      width: 100px;
+    }
+  }
+
+  .inputContainer {
+    input {
+      width: 75%;
+    }
+
+    .inputHolder {
+      .viewIcon {
+        width: 15px;
+        left: 85%;
+      }
+
+      .hideEye {
+        left: 85%;
+        width: 17px;
+      }
+    }
+  }
+
+  .row {
+    width: 90%;
+  }
+
+  .suggestText {
+    font-size: smaller;
+  }
+}

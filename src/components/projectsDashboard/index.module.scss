@@ -1,0 +1,75 @@
+@import '../../app/globals.scss';
+
+.mainContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .container {
+    width: 70%;
+    .headers {
+      margin: 10px 0;
+      display: flex;
+      justify-content: flex-end;
+      width: 100%;
+    }
+
+    .table {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #f1f1f1;
+      border-radius: 15px;
+
+      .tableHeader {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        h2 {
+          color: #5d5fef;
+          font-weight: 700;
+          font-size: 25px;
+        }
+
+        .inviteButton {
+          display: flex;
+          width: 99px;
+          height: 30px;
+          padding: 0 5px;
+          justify-content: center;
+          align-items: center;
+          gap: 8px;
+          border-radius: 4px;
+          border: 1px solid var(--main, #5d5fef);
+          background: #fff;
+          flex-shrink: 0;
+          color: #222325;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 500;
+          font-weight: 500;
+          letter-spacing: 0.14px;
+          cursor: pointer;
+        }
+      }
+
+      .tableData {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border: 1px solid #d3d3d3;
+        border-radius: 8px;
+        padding: 10px;
+        margin-top: 10px;
+        background-color: #f8f8f8;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .mainContainer {
+    .container {
+      width: 100%;
+    }
+  }
+}

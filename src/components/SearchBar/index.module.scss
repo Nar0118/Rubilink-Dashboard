@@ -1,0 +1,20 @@
+@import '../../app/globals.scss';
+.searchBar {
+  height: 50px;
+  padding: 0 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  border: 1px solid var(--main, $primary-color);
+  cursor: pointer;
+  transition: 1s ease-in-out;
+  img {
+    width: 23px;
+    height: 23px;
+  }
+
+  &:active {
+    background-color: $primary-color;
+  }
+}

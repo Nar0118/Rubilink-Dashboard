@@ -1,0 +1,129 @@
+.buttonGroup {
+  display: flex;
+  gap: 10px;
+  padding: 0 30px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+
+  & > div {
+    display: flex;
+    width: 85px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    background: #eff0f4;
+    color: #70757b;
+    cursor: pointer;
+  }
+
+  .editButton {
+    font-size: 14px;
+    line-height: normal;
+    letter-spacing: 0.14px;
+  }
+
+  .removeButton {
+    color: #e84142;
+    font-size: 14px;
+    font-style: normal;
+    line-height: normal;
+  }
+}
+
+.removeUserButton {
+  display: flex;
+  width: 85px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  background: #fff;
+  border: 1px solid #eff0f4;
+  color: #70757b;
+  color: #e84142;
+  font-size: 14px;
+  font-style: normal;
+  line-height: normal;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.statusButton {
+  display: flex;
+  margin: 0 auto;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  gap: 10px;
+  flex-shrink: 0;
+  color: #0e0f11;
+  font-size: 14px;
+  line-height: normal;
+  border-radius: 4px;
+}
+
+.actionPart {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  & > div {
+    cursor: pointer;
+  }
+}
+
+.tableInformation {
+  position: absolute;
+  bottom: 35px;
+  left: 30px;
+  color: #a5a3a9;
+  font-size: 13px;
+  line-height: normal;
+  letter-spacing: 0.26px;
+}
+
+.showingText {
+  position: absolute;
+  bottom: 35px;
+  right: 130px;
+  color: #515151;
+  font-size: 12px;
+  line-height: normal;
+  letter-spacing: 0.24px;
+}
+
+.orgProjects {
+  display: flex;
+  flex-wrap: wrap;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  & div {
+    width: 100%;
+    color: #0e0f11;
+    font-size: 16px;
+  }
+
+  & span {
+    color: #70757b;
+    font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .tableInformation {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .showingText,
+  .tableInformation {
+    display: none;
+  }
+}

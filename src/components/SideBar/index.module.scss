@@ -1,0 +1,57 @@
+@import '../../app/globals.scss';
+
+.sidebar {
+  width: 290px;
+  height: 91vh;
+  background-color: $soft-primary-color;
+  padding: 5vh 1.5vh;
+  box-sizing: border-box;
+  left: -290px;
+  transition: 0.5s ease-in-out;
+  opacity: 0;
+  position: absolute;
+  z-index: 7;
+
+  .categoryHolder {
+    width: 100%;
+    height: 100%;
+    font-weight: 600;
+
+    & > a {
+      height: 45px;
+      width: 100%;
+      display: flex;
+      gap: 10px;
+      padding-left: 25px;
+      box-sizing: border-box;
+      align-items: center;
+      border-radius: 9px;
+      text-decoration: none;
+      color: #0e0f11;
+      font-size: 15px;
+      line-height: normal;
+      letter-spacing: 0.3px;
+      margin-bottom: 5px;
+
+      &:hover {
+        background-color: #e8e8ff;
+      }
+
+      img {
+        width: 18px;
+        height: 18px;
+      }
+    }
+
+    .activeLink {
+      background: linear-gradient(218deg, #8a88ff 0%, $primary-color 100%);
+      color: #fff;
+      font-weight: 600;
+    }
+  }
+}
+
+.opened {
+  left: 0;
+  opacity: 1;
+}

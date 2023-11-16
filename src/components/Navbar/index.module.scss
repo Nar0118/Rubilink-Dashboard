@@ -1,0 +1,106 @@
+@import '../../styles/utils/breakpoints';
+@import '../../app/globals.scss';
+
+.header {
+  width: 100%;
+  height: 9vh;
+  display: flex;
+  align-items: center;
+  background-color: $soft-primary-color;
+  padding: 0.5vh 0 0.5vh 4vw;
+  box-sizing: border-box;
+
+  .navbar {
+    width: 95%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+
+    .logoHolder {
+      cursor: pointer;
+    }
+
+    .navMenuPart {
+      width: 80%;
+      padding: 0 4vw;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-sizing: border-box;
+      img {
+        cursor: pointer;
+        transition: 0.5s ease-in-out;
+      }
+
+      .rotated {
+        transform: rotate(90deg);
+      }
+
+      .accountName {
+        position: relative;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        gap: 10px;
+        font-weight: 500;
+        cursor: pointer;
+
+        .accountCreds {
+          & > div:first-child {
+            padding-bottom: 2px;
+          }
+
+          & > div:last-child {
+            padding-top: 2px;
+            color: #9297a1;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 13px;
+            letter-spacing: 0.5px;
+          }
+        }
+        .avatarHolder {
+          img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+          }
+        }
+
+        .accountPopUp {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          z-index: 3;
+          bottom: -120%;
+          background-color: #fff;
+          display: flex;
+          align-items: center;
+          padding-left: 10%;
+          box-sizing: border-box;
+          box-shadow:
+            rgba(17, 17, 26, 0.05) 0px 4px 16px,
+            rgba(17, 17, 26, 0.05) 0px 8px 32px;
+          cursor: pointer;
+
+          .popupItem {
+            color: #0e0f11;
+            font-size: 16px;
+            line-height: normal;
+            width: 100%;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .accountCreds {
+    display: none;
+  }
+}
